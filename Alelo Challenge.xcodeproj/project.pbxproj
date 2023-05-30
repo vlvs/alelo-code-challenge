@@ -29,6 +29,7 @@
 		C2281C352A256880004FFFDC /* ShoppingCartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartButton.swift; sourceTree = "<group>"; };
 		C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
 		C2281C3A2A2580BB004FFFDC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C2281C3C2A259769004FFFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C232D51C2A253AF20023032F /* Alelo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alelo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alelo_ChallengeApp.swift; sourceTree = "<group>"; };
 		C232D5212A253AF20023032F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 				C232D5252A253AF40023032F /* Alelo_Challenge.entitlements */,
 				C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */,
 				C232D5232A253AF40023032F /* Assets.xcassets */,
+				C2281C3C2A259769004FFFDC /* Info.plist */,
 				C232D5352A253D240023032F /* Models */,
 				C232D52E2A253B1A0023032F /* Network */,
 				C2281C322A256655004FFFDC /* Views */,
