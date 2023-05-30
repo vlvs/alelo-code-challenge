@@ -12,7 +12,7 @@ struct ShoppingCartView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                ForEach(products, id: \.name) { product in
+                ForEach(products, id: \.codeColor) { product in
                     ProductCard(
                         product: product,
                         isInShoppingCart: true,
