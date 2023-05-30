@@ -60,7 +60,7 @@ struct ContentView: View {
             ZStack {
                 ShoppingCartButton(productsInCart: self.viewModel.productsInCart)
                 ScrollView(.vertical) {
-                    ForEach(mockProducts, id: \.name) { product in
+                    ForEach(self.viewModel.products, id: \.name) { product in
                         ProductCard(
                             product: product,
                             isInShoppingCart: false,
