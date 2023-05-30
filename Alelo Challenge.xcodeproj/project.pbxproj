@@ -14,7 +14,6 @@
 		C2281C3B2A2580BB004FFFDC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C3A2A2580BB004FFFDC /* ContentViewModel.swift */; };
 		C2281C4F2A25A83B004FFFDC /* ContentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */; };
 		C2281C512A25AA74004FFFDC /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */; };
-		C2281C532A25AB85004FFFDC /* ProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C522A25AB85004FFFDC /* ProductMock.swift */; };
 		C22A93202A25B69600FACC1F /* XCTestCase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */; };
 		C22A93222A25B71B00FACC1F /* ProductRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */; };
 		C22A93252A25B7EE00FACC1F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = C22A93242A25B7EE00FACC1F /* products.json */; };
@@ -49,7 +48,6 @@
 		C2281C452A25A81E004FFFDC /* Alelo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alelo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTest.swift; sourceTree = "<group>"; };
 		C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
-		C2281C522A25AB85004FFFDC /* ProductMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMock.swift; sourceTree = "<group>"; };
 		C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utils.swift"; sourceTree = "<group>"; };
 		C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryTest.swift; sourceTree = "<group>"; };
 		C22A93242A25B7EE00FACC1F /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */,
 				C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */,
 				C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */,
-				C2281C522A25AB85004FFFDC /* ProductMock.swift */,
 				C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */,
 			);
 			path = "Alelo ChallengeTests";
@@ -297,7 +294,6 @@
 			files = (
 				C22A93202A25B69600FACC1F /* XCTestCase+Utils.swift in Sources */,
 				C22A93222A25B71B00FACC1F /* ProductRepositoryTest.swift in Sources */,
-				C2281C532A25AB85004FFFDC /* ProductMock.swift in Sources */,
 				C2281C4F2A25A83B004FFFDC /* ContentViewModelTest.swift in Sources */,
 				C2281C512A25AA74004FFFDC /* NetworkClientMock.swift in Sources */,
 			);
