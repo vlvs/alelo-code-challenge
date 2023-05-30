@@ -18,14 +18,18 @@ final class ContentViewModel: ObservableObject {
     }
     
     func addProductToCart(_ product: Product) {
-        self.productsInCart.append(product)
+        DispatchQueue.main.async {
+            self.productsInCart.append(product)
+        }
     }
     
     private func retrieveProducts() {
         service.getProducts { [weak self] result in
             switch result {
             case .success(let products):
-                self?.products = products
+                DispatchQueue.main.async {
+                    self?.products = products
+                }
             case .failure(let error):
                 print("Error: \(error)")
             }
