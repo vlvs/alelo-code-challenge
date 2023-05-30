@@ -13,7 +13,11 @@ struct ShoppingCartView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 ForEach(products, id: \.name) { product in
-                    ProductCard(product: product)
+                    ProductCard(
+                        product: product,
+                        isInShoppingCart: true,
+                        cartConfirmationButtonTapped: { _ in }
+                    )
                 }
             }
         }

@@ -54,17 +54,26 @@ let mockProduct3 = Product(
 )
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ContentViewModel()
     var body: some View {
         NavigationView {
             ZStack {
-                ShoppingCartButton(productsInCart: [mockProduct3, mockProduct3, mockProduct1])
+                ShoppingCartButton(productsInCart: self.viewModel.productsInCart)
                 ScrollView(.vertical) {
                     ForEach(mockProducts, id: \.name) { product in
-                        ProductCard(product: product)
+                        ProductCard(
+                            product: product,
+                            isInShoppingCart: false,
+                            cartConfirmationButtonTapped: self.cartConfirmationButtonTapped
+                        )
                     }
                 }
             }
         }
+    }
+    
+    private func cartConfirmationButtonTapped(for product: Product) {
+        self.viewModel.addProductToCart(product)
     }
 }
 
