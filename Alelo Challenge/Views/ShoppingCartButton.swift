@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct ShoppingCartButton: View {
+    var productsInCart: [Product]
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Button(action: {
-                    // TODO: Implement Button action
-                }, label: {
-                    Image(systemName: "cart")
+                NavigationLink(destination: ShoppingCartView(products: productsInCart)) {
+                    Image(systemName: productsInCart.isEmpty ? "cart" : "cart.fill")
                         .font(.system(.largeTitle))
                         .frame(width: 70, height: 70)
                         .foregroundColor(Color.white)
-
-                })
-                .background(Color.black)
-                .cornerRadius(38.5)
+                        .background(Color.black)
+                        .cornerRadius(38.5)
+                        .padding()
+                }
                 .padding()
             }
             Spacer()
@@ -32,7 +31,22 @@ struct ShoppingCartButton: View {
 }
 
 struct ShoppingCartButton_Previews: PreviewProvider {
+    static let product = Product(
+        name: "VESTIDO TRANSPASSE BOW",
+        onSale: false,
+        regularPrice: "R$ 199,90",
+        actualPrice: "R$ 199,90",
+        installments: "3x R$ 66,63",
+        image: URL(string: "https://d3l7rqep7l31az.cloudfront.net/images/products/20002605_615_catalog_1.jpg?1460136912"),
+        sizes: [
+            Size(available: false, size: "PP"),
+            Size(available: true, size: "P"),
+            Size(available: true, size: "M"),
+            Size(available: true, size: "G"),
+            Size(available: false, size: "GG")
+        ]
+    )
     static var previews: some View {
-        ShoppingCartButton()
+        ShoppingCartButton(productsInCart: [product, product])
     }
 }

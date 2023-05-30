@@ -16,17 +16,8 @@ struct ShoppingCartView: View {
                     ProductCard(product: product)
                 }
             }
-            .navigationTitle("Carrinho")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        // TODO: Implement Button action
-                    } label: {
-                        Image(systemName: "chevron.left")
-                    }
-                }
-            }
-        }.navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationTitle("Carrinho")
     }
 }
 
@@ -47,6 +38,6 @@ struct ShoppingCartView_Previews: PreviewProvider {
         ]
     )
     static var previews: some View {
-        ShoppingCartView(products: [product, product, product, product])
+        ShoppingCartView(products: [product, product])
     }
 }

@@ -55,11 +55,13 @@ let mockProduct3 = Product(
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ShoppingCartButton()
-            ScrollView(.vertical) {
-                ForEach(mockProducts, id: \.name) { product in
-                    ProductCard(product: product)
+        NavigationView {
+            ZStack {
+                ShoppingCartButton(productsInCart: [mockProduct3, mockProduct3, mockProduct1])
+                ScrollView(.vertical) {
+                    ForEach(mockProducts, id: \.name) { product in
+                        ProductCard(product: product)
+                    }
                 }
             }
         }
