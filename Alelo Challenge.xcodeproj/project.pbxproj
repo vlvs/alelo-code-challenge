@@ -12,6 +12,12 @@
 		C2281C362A256880004FFFDC /* ShoppingCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C352A256880004FFFDC /* ShoppingCartButton.swift */; };
 		C2281C382A256B4B004FFFDC /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */; };
 		C2281C3B2A2580BB004FFFDC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C3A2A2580BB004FFFDC /* ContentViewModel.swift */; };
+		C2281C4F2A25A83B004FFFDC /* ContentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */; };
+		C2281C512A25AA74004FFFDC /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */; };
+		C2281C532A25AB85004FFFDC /* ProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C522A25AB85004FFFDC /* ProductMock.swift */; };
+		C22A93202A25B69600FACC1F /* XCTestCase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */; };
+		C22A93222A25B71B00FACC1F /* ProductRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */; };
+		C22A93252A25B7EE00FACC1F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = C22A93242A25B7EE00FACC1F /* products.json */; };
 		C232D5202A253AF20023032F /* Alelo_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */; };
 		C232D5222A253AF20023032F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232D5212A253AF20023032F /* ContentView.swift */; };
 		C232D5242A253AF40023032F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C232D5232A253AF40023032F /* Assets.xcassets */; };
@@ -23,6 +29,16 @@
 		C232D5392A253E1E0023032F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232D5382A253E1E0023032F /* Size.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C2281C492A25A81E004FFFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C232D5142A253AF20023032F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C232D51B2A253AF20023032F;
+			remoteInfo = "Alelo Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C2281C302A253FD5004FFFDC /* JSONDecoder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Utils.swift"; sourceTree = "<group>"; };
 		C2281C332A2566C4004FFFDC /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
@@ -30,6 +46,13 @@
 		C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
 		C2281C3A2A2580BB004FFFDC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C2281C3C2A259769004FFFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2281C452A25A81E004FFFDC /* Alelo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alelo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTest.swift; sourceTree = "<group>"; };
+		C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
+		C2281C522A25AB85004FFFDC /* ProductMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMock.swift; sourceTree = "<group>"; };
+		C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utils.swift"; sourceTree = "<group>"; };
+		C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryTest.swift; sourceTree = "<group>"; };
+		C22A93242A25B7EE00FACC1F /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		C232D51C2A253AF20023032F /* Alelo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alelo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alelo_ChallengeApp.swift; sourceTree = "<group>"; };
 		C232D5212A253AF20023032F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C2281C422A25A81E004FFFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C232D5192A253AF20023032F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,10 +111,32 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C2281C462A25A81E004FFFDC /* Alelo ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C22A93232A25B7D700FACC1F /* Fixtures */,
+				C2281C4E2A25A83B004FFFDC /* ContentViewModelTest.swift */,
+				C22A93212A25B71A00FACC1F /* ProductRepositoryTest.swift */,
+				C2281C502A25AA74004FFFDC /* NetworkClientMock.swift */,
+				C2281C522A25AB85004FFFDC /* ProductMock.swift */,
+				C22A931F2A25B69600FACC1F /* XCTestCase+Utils.swift */,
+			);
+			path = "Alelo ChallengeTests";
+			sourceTree = "<group>";
+		};
+		C22A93232A25B7D700FACC1F /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				C22A93242A25B7EE00FACC1F /* products.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		C232D5132A253AF20023032F = {
 			isa = PBXGroup;
 			children = (
 				C232D51E2A253AF20023032F /* Alelo Challenge */,
+				C2281C462A25A81E004FFFDC /* Alelo ChallengeTests */,
 				C232D51D2A253AF20023032F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C232D51C2A253AF20023032F /* Alelo Challenge.app */,
+				C2281C452A25A81E004FFFDC /* Alelo ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +197,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C2281C442A25A81E004FFFDC /* Alelo ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2281C4B2A25A81E004FFFDC /* Build configuration list for PBXNativeTarget "Alelo ChallengeTests" */;
+			buildPhases = (
+				C2281C412A25A81E004FFFDC /* Sources */,
+				C2281C422A25A81E004FFFDC /* Frameworks */,
+				C2281C432A25A81E004FFFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2281C4A2A25A81E004FFFDC /* PBXTargetDependency */,
+			);
+			name = "Alelo ChallengeTests";
+			productName = "Alelo ChallengeTests";
+			productReference = C2281C452A25A81E004FFFDC /* Alelo ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C232D51B2A253AF20023032F /* Alelo Challenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C232D52B2A253AF40023032F /* Build configuration list for PBXNativeTarget "Alelo Challenge" */;
@@ -171,6 +242,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					C2281C442A25A81E004FFFDC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = C232D51B2A253AF20023032F;
+					};
 					C232D51B2A253AF20023032F = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -190,11 +265,20 @@
 			projectRoot = "";
 			targets = (
 				C232D51B2A253AF20023032F /* Alelo Challenge */,
+				C2281C442A25A81E004FFFDC /* Alelo ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C2281C432A25A81E004FFFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22A93252A25B7EE00FACC1F /* products.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C232D51A2A253AF20023032F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +291,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C2281C412A25A81E004FFFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22A93202A25B69600FACC1F /* XCTestCase+Utils.swift in Sources */,
+				C22A93222A25B71B00FACC1F /* ProductRepositoryTest.swift in Sources */,
+				C2281C532A25AB85004FFFDC /* ProductMock.swift in Sources */,
+				C2281C4F2A25A83B004FFFDC /* ContentViewModelTest.swift in Sources */,
+				C2281C512A25AA74004FFFDC /* NetworkClientMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C232D5182A253AF20023032F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,7 +324,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C2281C4A2A25A81E004FFFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C232D51B2A253AF20023032F /* Alelo Challenge */;
+			targetProxy = C2281C492A25A81E004FFFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C2281C4C2A25A81E004FFFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vlvs.Alelo-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alelo Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alelo Challenge";
+			};
+			name = Debug;
+		};
+		C2281C4D2A25A81E004FFFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vlvs.Alelo-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alelo Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alelo Challenge";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C232D5292A253AF40023032F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +558,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C2281C4B2A25A81E004FFFDC /* Build configuration list for PBXNativeTarget "Alelo ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2281C4C2A25A81E004FFFDC /* Debug */,
+				C2281C4D2A25A81E004FFFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C232D5172A253AF20023032F /* Build configuration list for PBXProject "Alelo Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

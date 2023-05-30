@@ -15,3 +15,17 @@ struct Product: Decodable {
     let image: String
     let sizes: [Size]
 }
+
+extension Product: Equatable {
+    static func == (lhs: Product, rhs: Product) -> Bool {
+        guard lhs.codeColor == rhs.codeColor else { return false }
+        guard lhs.name == rhs.name else { return false }
+        guard lhs.onSale == rhs.onSale else { return false }
+        guard lhs.regularPrice == rhs.regularPrice else { return false }
+        guard lhs.actualPrice == rhs.actualPrice else { return false }
+        guard lhs.installments == rhs.installments else { return false }
+        guard lhs.image == rhs.image else { return false }
+        guard lhs.sizes == rhs.sizes else { return false }
+        return true
+    }
+}
