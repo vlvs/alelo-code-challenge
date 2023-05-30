@@ -27,7 +27,8 @@ final class ProductRepositoryImpl: ProductRepository {
             switch result {
             case .success(let data):
                 do {
-                    let products = try JSONDecoder.itemDecoder().decode([Product].self, from: data)
+                    let productsDict = try JSONDecoder.itemDecoder().decode([String: [Product]].self, from: data)
+                    let products = productsDict["products"]!
                     completion(.success(products))
                 } catch let error {
                     completion(.failure(NetworkError.decoderFailed(error)))

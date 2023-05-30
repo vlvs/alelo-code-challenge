@@ -17,7 +17,7 @@ struct ProductCard: View {
     var body: some View {
         VStack {
             HStack {
-                AsyncImage(url: product.image) { image in
+                AsyncImage(url: URL(string: product.image)) { image in
                     image
                         .resizable()
                         .scaledToFill()
@@ -64,12 +64,13 @@ struct ProductCard: View {
 
 struct ProductCard_Previews: PreviewProvider {
     static let product = Product(
+        codeColor: "102839",
         name: "VESTIDO TRANSPASSE BOW",
         onSale: false,
         regularPrice: "R$ 199,90",
         actualPrice: "R$ 199,90",
         installments: "3x R$ 66,63",
-        image: URL(string: "https://d3l7rqep7l31az.cloudfront.net/images/products/20002605_615_catalog_1.jpg?1460136912"),
+        image: "https://d3l7rqep7l31az.cloudfront.net/images/products/20002605_615_catalog_1.jpg?1460136912",
         sizes: [
             Size(available: false, size: "PP"),
             Size(available: true, size: "P"),

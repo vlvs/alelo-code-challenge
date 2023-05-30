@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import OSLog
 
 final class ContentViewModel: ObservableObject {
     @Published var products: [Product] = []
