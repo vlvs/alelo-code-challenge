@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C2281C312A253FD5004FFFDC /* JSONDecoder+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C302A253FD5004FFFDC /* JSONDecoder+Utils.swift */; };
+		C2281C342A2566C4004FFFDC /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C332A2566C4004FFFDC /* ProductCard.swift */; };
+		C2281C362A256880004FFFDC /* ShoppingCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C352A256880004FFFDC /* ShoppingCartButton.swift */; };
+		C2281C382A256B4B004FFFDC /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */; };
 		C232D5202A253AF20023032F /* Alelo_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */; };
 		C232D5222A253AF20023032F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232D5212A253AF20023032F /* ContentView.swift */; };
 		C232D5242A253AF40023032F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C232D5232A253AF40023032F /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		C2281C302A253FD5004FFFDC /* JSONDecoder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Utils.swift"; sourceTree = "<group>"; };
+		C2281C332A2566C4004FFFDC /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		C2281C352A256880004FFFDC /* ShoppingCartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartButton.swift; sourceTree = "<group>"; };
+		C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
 		C232D51C2A253AF20023032F /* Alelo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alelo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alelo_ChallengeApp.swift; sourceTree = "<group>"; };
 		C232D5212A253AF20023032F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C2281C322A256655004FFFDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C232D5212A253AF20023032F /* ContentView.swift */,
+				C2281C332A2566C4004FFFDC /* ProductCard.swift */,
+				C2281C352A256880004FFFDC /* ShoppingCartButton.swift */,
+				C2281C372A256B4B004FFFDC /* ShoppingCartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C232D5132A253AF20023032F = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +89,13 @@
 		C232D51E2A253AF20023032F /* Alelo Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C232D5252A253AF40023032F /* Alelo_Challenge.entitlements */,
+				C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */,
+				C232D5232A253AF40023032F /* Assets.xcassets */,
 				C232D5352A253D240023032F /* Models */,
 				C232D52E2A253B1A0023032F /* Network */,
+				C2281C322A256655004FFFDC /* Views */,
 				C2281C2F2A253FBC004FFFDC /* Utils */,
-				C232D51F2A253AF20023032F /* Alelo_ChallengeApp.swift */,
-				C232D5212A253AF20023032F /* ContentView.swift */,
-				C232D5232A253AF40023032F /* Assets.xcassets */,
-				C232D5252A253AF40023032F /* Alelo_Challenge.entitlements */,
 				C232D5262A253AF40023032F /* Preview Content */,
 			);
 			path = "Alelo Challenge";
@@ -182,10 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C232D5222A253AF20023032F /* ContentView.swift in Sources */,
+				C2281C362A256880004FFFDC /* ShoppingCartButton.swift in Sources */,
+				C2281C382A256B4B004FFFDC /* ShoppingCartView.swift in Sources */,
 				C232D5392A253E1E0023032F /* Size.swift in Sources */,
 				C232D5342A253CC80023032F /* ProductRepository.swift in Sources */,
 				C232D5322A253B780023032F /* NetworkError.swift in Sources */,
 				C232D5202A253AF20023032F /* Alelo_ChallengeApp.swift in Sources */,
+				C2281C342A2566C4004FFFDC /* ProductCard.swift in Sources */,
 				C232D5302A253B420023032F /* NetworkClient.swift in Sources */,
 				C2281C312A253FD5004FFFDC /* JSONDecoder+Utils.swift in Sources */,
 				C232D5372A253D2E0023032F /* Product.swift in Sources */,

@@ -12,8 +12,7 @@ struct Product: Decodable {
     let onSale: Bool
     let regularPrice: String
     let actualPrice: String
-    let discountPercentage: String
     let installments: String
-    let image: URL
+    let image: URL?
     let sizes: [Size]
 }

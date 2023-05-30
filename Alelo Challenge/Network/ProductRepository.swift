@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ProductRepository {
-    func getItems(completion: @escaping ((Result<[Product], NetworkError>) -> Void))
+    func getProducts(completion: @escaping ((Result<[Product], NetworkError>) -> Void))
 }
 
 final class ProductRepositoryImpl: ProductRepository {
@@ -21,7 +21,7 @@ final class ProductRepositoryImpl: ProductRepository {
         self.client = client
     }
 
-    func getItems(completion: @escaping ((Result<[Product], NetworkError>) -> Void)) {
+    func getProducts(completion: @escaping ((Result<[Product], NetworkError>) -> Void)) {
         guard let url = URL(string: mockBaseUrl + mockResourcePath) else { return }
         client.request(url: url) { result in
             switch result {
